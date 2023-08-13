@@ -1,5 +1,6 @@
 import './styles.scss';
 
+//The PageHeaderContent component takes in two props headerText and icon.
 const PageHeaderContent = (props) => {
   const { headerText, icon } = props;
 

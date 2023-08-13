@@ -12,12 +12,16 @@ import {MdWork} from 'react-icons/md';
 
 const Resume = () => {
   return (
+    //PageHeaderContent component is used to create a consistent header style with a title and an icon
     <section id="resume" className="resume">
       <PageHeaderContent
         headerText="My Resume"
         icon={<BsInfoCircleFill size={40} />}
       />
 
+
+      {/*the resume content is organized using three different 
+       timeline sections: academic credentials, additional courses/trainings, and academic projects.*/}
       <div className="timeline">
 
         <div className="timeline__academiccredentials">

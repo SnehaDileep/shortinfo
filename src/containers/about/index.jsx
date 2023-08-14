@@ -41,7 +41,7 @@ const About = () => {
       <div className="about__content">
 
          {/* contain information.The content starts from an off-screen position and animates into view. */}
-        <div className="about__content__personalWrapper">
+        <div className="about__content__personalWrapper"> 
           <Animate
             play
             duration={1.5}
@@ -82,7 +82,6 @@ const About = () => {
           </Animate>
         </div>
 
-
         {/*contains a set of icons representing various services or technologies*/}
         <div className="about__content__servicesWrapper">
           <Animate
@@ -112,6 +111,7 @@ const About = () => {
             </div>
           </Animate>
         </div>
+
       </div>
     </section>
   );

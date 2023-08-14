@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {HiX } from "react-icons/hi";
-import { FaBars, FaReact } from "react-icons/fa"; //The code imports necessary components and icons from external libraries react-icons and react-router-dom
+import { FaBars, FaReact } from "react-icons/fa";  //The code imports necessary components and icons from external libraries react-icons and react-router-dom
 import { Link } from "react-router-dom";
 import "./styles.scss";
 
@@ -9,7 +9,7 @@ import "./styles.scss";
 const data = [
   {
     label: "HOME",
-    to: "/",
+    to: "/shortinfo",//updated
   },
   {
     label: "ABOUT ME",
@@ -44,7 +44,7 @@ const Navbar = () => {
       <div className={click ? "main-container" : ""} onClick={() => Close()} />
       <nav className="navbar" onClick={(e) => e.stopPropagation()}>
         <div className="navbar__container">
-          <Link exact to="/" className="navbar__container__logo">
+          <Link exact to="/shortinfo" className="navbar__container__logo">
             <FaReact size={30} />
           </Link>
           <ul className={click ? "navbar__container__menu active" : "navbar__container__menu"}>
@@ -71,4 +71,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;  //The Navbar component is exported as the default export, making it available for use in other parts of the application.
+export default Navbar; //The Navbar component is exported as the default export, making it available for use in other parts of the application.

@@ -12,7 +12,6 @@ const Home = () => {
   };
 
   return (
-    //PageHeaderContent component is used to create a consistent header style with a title and an icon
     <section id="home" className="home">
       <div className="home__text-wrapper">
         <h1>
@@ -21,7 +20,7 @@ const Home = () => {
           Aspiring Front end developer
         </h1>
       </div>
-      <Animate
+        <Animate
         play
         duration={1.5}
         delay={1}
@@ -31,11 +30,11 @@ const Home = () => {
         end={{
           transform: "translatex(0px)",
         }}
-      >
+      > 
         <div className="home__about-me">
           <button onClick={handleNavigateToAboutMePage}>About Me</button>
         </div>
-      </Animate>
+      </Animate> 
     </section>
   );
 };

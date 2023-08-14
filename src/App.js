@@ -13,11 +13,11 @@ function App() {
   const location = useLocation();
   console.log(location);
 
-  const handleInit = async (main) => {
-    await loadFull(main);
-  };
+   const handleInit = async (main) => {
+     await loadFull(main);
+   };
 
-  const renderParticleJsInHomePage = location.pathname === "/";
+  const renderParticleJsInHomePage = location.pathname === "/shortinfo"; //updated
 
   return (
     <div className="App">
@@ -33,7 +33,7 @@ function App() {
       {/* main page content */}
       <div className="App__main-page-content">
       <Routes>
-        <Route index path="/" element={<Home />} />
+        <Route index path="/shortinfo" element={<Home />} />   
         <Route path="/about" element={<About />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/skills" element={<Skills />} />

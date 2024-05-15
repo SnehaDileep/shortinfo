@@ -9,7 +9,7 @@ import "./styles.scss";
 const data = [
   {
     label: "HOME",
-    to: "/",//updated
+    to: "/shortinfo",//updated
   },
   {
     label: "ABOUT ME",
@@ -44,7 +44,7 @@ const Navbar = () => {
       <div className={click ? "main-container" : ""} onClick={() => Close()} />
       <nav className="navbar" onClick={(e) => e.stopPropagation()}>
         <div className="navbar__container">
-          <Link exact to="/" className="navbar__container__logo">
+          <Link exact to="/shortinfo" className="navbar__container__logo">
             <FaReact size={30} />
           </Link>
           <ul className={click ? "navbar__container__menu active" : "navbar__container__menu"}>

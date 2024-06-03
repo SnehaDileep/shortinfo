@@ -2,7 +2,7 @@ import "./App.scss";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import Home from "./containers/home";
+import Home from "./containers/home/home.js";
 import About from "./containers/about";
 import Resume from "./containers/resume";
 import Skills from "./containers/skills";
